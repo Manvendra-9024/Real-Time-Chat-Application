@@ -1,2 +1,40 @@
-# Real-Time-Chat-Application
-Developed a scalable real-time communication platform with live messaging, user authentication, WebSocket integration, and cross-platform support using modern backend technologies.  Technologies: FastAPI, WebSockets, Flutter, React, PostgreSQL.
+# Real-Time Chat Application
+
+## Overview
+A full-stack real-time chat application supporting private messaging, group rooms, and message history.
+
+## Tools & Technologies
+- **Node.js** – Backend server
+- **Python** – Bot integration and analytics scripts
+- **MySQL** – Message persistence and user data
+- **Encryption** – TLS in transit, AES for stored messages
+
+## Project Structure
+```
+real_time_chat_application/
+├── server/
+│   ├── index.js
+│   ├── socket/
+│   └── routes/
+├── client/
+│   └── public/
+├── database/
+│   └── schema.sql
+├── analytics/
+│   └── chat_stats.py
+└── README.md
+```
+
+## Features
+- WebSocket-based real-time messaging (Socket.io)
+- User authentication with JWT
+- Private and group chat rooms
+- Message history with MySQL persistence
+- End-to-end encrypted private messages
+- Online/offline status indicators
+
+## Setup
+```bash
+npm install
+node server/index.js
+```
